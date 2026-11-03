@@ -1,0 +1,27 @@
+{
+  "name": "opencode-egm",
+  "version": "0.1.0",
+  "description": "Elephant-Goldfish Model (EGM) integration for OpenCode V2 (experimental)",
+  "license": "Apache-2.0",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src",
+    "scripts",
+    "bundle"
+  ],
+  "scripts": {
+    "bundle": "node scripts/bundle.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test test/"
+  },
+  "dependencies": {
+    "@opencode/plugin": "2.2.5"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  }
+}
